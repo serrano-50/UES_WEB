@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapas Mentales</title>
+    <link rel="stylesheet" href="5pag.css" />
+    <link rel="icon" href="EDU.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+
+<!--titulo-->
+<center>
+    <h1>Mapas Mentales</h1>
+    <p><strong><span id="miElementoEnSubpagina"></span><span id="nombreMostrado"></span> </strong>👋 Organiza tus ideas con claridad visual y lógica</p>
+
+    <a href="menu4.html" class="boton-flotante">Inicio</a>
+    </header>
+</center>
+    <main>
+    <!-- Contenedor de contenido en línea con imagen -->
+    <section class="contenido-flex">
+        <div class="imagen-lateral">
+        <img src="https://img.freepik.com/vector-gratis/plantilla-diseno-mapas-mentales-coloridos_1308-160433.jpg?semt=ais_hybrid&w=740" alt="imagen-lateral" class="card-img" />
+        </div>
+        <div class="texto-lateral">
+        <p>Los mapas mentales son diagramas que conectan conceptos mediante palabras clave, imágenes y líneas. Permiten visualizar relaciones entre ideas y organizar información de forma creativa.</p>
+        <p>Para elaborarlos, inicia con una idea central en el centro y construye ramas con subtemas. Usa colores, símbolos y jerarquías para facilitar la memorización.</p>
+        <p>Son útiles para estudiar, planificar proyectos y resolver problemas complejos de forma estructurada pero flexible.</p>
+        </div>
+    </section>
+    </main>
+<!--recupera el nombre guardado en landing page-->
+    <script>
+    const nombre = localStorage.getItem('nombreUsuario');
+
+    document.getElementById('nombreMostrado').textContent = nombre ?? "Invitado";
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendizaje Colaborativo</title>
+    <link rel="stylesheet" href="5pag.css" />
+    <link rel="icon" href="EDU.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+
+<!--titulo-->
+    <center>
+    <h1>Aprendizaje Colaborativo</h1>
+    <p><strong><span id="miElementoEnSubpagina"></span><span id="nombreMostrado"></span></strong> 👋 Fortalece el estudio con apoyo y diálogo</p>
+    </center>
+    <a href="menu4.html" class="boton-flotante">Inicio</a>
+    </header>
+
+    <main>
+    <!-- Contenedor de contenido en línea con imagen -->
+    <section class="contenido-flex">
+        <div class="imagen-lateral">
+        <img src="https://img.freepik.com/vector-gratis/socios-grandes-piezas-rompecabezas_74855-5278.jpg?semt=ais_hybrid&w=740" alt="Pomodoro" class="card-img" alt="imagen-lateral" class="card-img" />        </div>
+        <div class="texto-lateral">
+        <p>El aprendizaje colaborativo implica compartir conocimientos, resolver dudas y desarrollar habilidades en grupo. Cada integrante aporta ideas y perspectivas distintas.</p>
+        <p>Promueve la comunicación, el pensamiento crítico y el respeto por opiniones diversas. Ideal para proyectos, repasos o debates académicos.</p>
+        <p>Puedes usar herramientas como foros, reuniones virtuales o grupos presenciales para aplicarlo con eficacia.</p>
+        </div>
+    </section>
+    </main>
+    <!--recupera el nombre guardado en landing page-->
+    <script>
+    const nombre = localStorage.getItem('nombreUsuario');
+    
+    // Mostrarlo en la página
+    document.getElementById('nombreMostrado').textContent = nombre ?? "Invitado";
+    </script>
+</body>
+</html>

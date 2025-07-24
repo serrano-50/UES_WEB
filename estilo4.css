@@ -1,0 +1,75 @@
+
+body {/* Fondo animado diagonal rojo - amarillo */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ff0000, #ffff00);
+  background-size: 200% 400%;
+  animation: fondoMovimiento 8s infinite alternate;
+}
+@keyframes fondoMovimiento {/*controla la velocidad*/
+  0% { background-position: left top; }
+  100% { background-position: right bottom; }
+}
+
+.contenedor {/* Contenedor principal */
+  text-align: center;
+  padding-top: 50px;
+}
+
+.titulo {/* Título centrado y de ancho completo */
+  width: 100%;
+  font-size: 3em;
+  color: white;
+  margin: 0;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo img {/* logo con esquinas redondeadas */
+  margin-top: 20px;
+  width: 120px;
+  height: auto;
+  border-radius: 15px; 
+}
+
+.entrada { /* Caja flotante de entrada */
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255,0.95);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  text-align: center;
+  transition: transform 1s ease;
+}
+
+.entrada.ocultar {
+  display: none;
+}
+
+input[type="text"] {/*entrada de texto*/
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button { /*detalles del boton*/
+  padding: 10px 20px;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {/*cambio de color para el boton*/
+  background-color: darkgreen;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoevaluación</title>
+    <link rel="stylesheet" href="5pag.css" />
+    <link rel="icon" href="EDU.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+
+<!--titulo-->
+<center>
+    <h1>Autoevaluación</h1>
+    <p><strong><span id="miElementoEnSubpagina"></span><span id="nombreMostrado"></span></strong> 👋 Mide tus conocimientos antes del examen</p>
+
+    <a href="menu4.html" class="boton-flotante">Inicio</a>
+    </header>
+</center>
+    <main>
+    <!-- Contenedor de contenido en línea con imagen -->
+    <section class="contenido-flex">
+        <div class="imagen-lateral">
+        <img src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-self-evaluation-of-your-usual-performance-image_2291955.jpg" alt="imagen-lateral" class="card-img" alt="Apuntes activos" class="card-img" />        </div>
+        <div class="texto-lateral">
+        <p>La autoevaluación permite identificar fortalezas y debilidades antes de enfrentar un examen. Consiste en realizar preguntas, resúmenes o ejercicios similares a los evaluados.</p>
+        <p>Ayuda a detectar vacíos de conocimiento y estimula el aprendizaje activo. Puedes usar simuladores, rúbricas o aplicaciones educativas.</p>
+        <p>Practicar regularmente mejora la confianza y refuerza la preparación general para cualquier prueba académica.</p>
+        </div>
+    </section>
+    </main>
+<!--recupera el nombre guardado en landing page-->
+    <script>
+    const nombre = localStorage.getItem('nombreUsuario');
+    
+    // Mostrarlo en la página
+    document.getElementById('nombreMostrado').textContent = nombre ?? "Invitado";
+    </script>
+</body>
+</html>

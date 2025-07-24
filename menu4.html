@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estrategias de Aprendizaje Universitario</title>
+
+  <link rel="icon" href="EDU.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="estilomenu4.css" /> 
+</head>
+<body>
+  <header>
+
+<div class="neon-container">
+    <h1 class="neon-text">Estrategias de Aprendizaje Universitario</h1>
+</div>
+
+
+    <p><span id="nombreMostrado"></span> 👋 Mejora tu rendimiento académico con técnicas efectivas</p>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="estrat1.html">Mapas Mentales</a></li>
+        <li><a href="estrat2.html">Toma de Apuntes</a></li>
+        <li><a href="estrat3.html">Técnica pomodoro</a></li>
+        <li><a href="estrat4.html">Autoevaluación</a></li>
+        <li><a href="estrat5.html">Aprendizaje colaborativo</a></li>
+
+      </ul>
+    </nav>
+  </header>
+<!-- LOGOTIPO-->
+  <div class="layout-grid">
+    <aside class="logo-container">
+    <div>
+    <img src="logo_ues.png" alt="Logotipo UES" class="logo-redondo">
+    </div>
+    <div><strong>Detallanos lo que te gusta más</strong> 
+      <br>
+    <strong>pon tu check 👇</strong><br><br>
+    </div>
+<!--generar botones de check para seleccionar multiples opciones-->
+                <input type="checkbox" id="opcion1" name="opciones" value="valor1">
+                <label for="opcion1">Mapas Mentales</label>
+                <br>
+                <input type="checkbox" id="opcion2" name="opciones" value="valor2">
+                <label for="opcion2">Toma de Apuntes Activa</label>
+                <br>
+                <input type="checkbox" id="opcion3" name="opciones" value="valor3">
+                <label for="opcion3">Técnica Pomodoro</label>
+                <br>
+                <input type="checkbox" id="opcion4" name="opciones" value="valor4">
+                <label for="opcion4">Autoevaluación</label>
+                <br>
+                <input type="checkbox" id="opcion5" name="opciones" value="valor1">
+                <label for="opcion5">Aprendizaje Colaborativo</label>
+                <br>
+                <br><br>
+
+                <div>
+                <p><strong>¿Cuál de estas herramientas te fue es útil para trabajar tus clases?</strong></p>
+                <label>
+                  <input type="radio" name="opcion" value="opcion 1" /> Genially
+                </label><br />
+                <label>
+                  <input type="radio" name="opcion" value="opcion 2" /> Padlet
+                </label><br />
+                <label>
+                  <input type="radio" name="opcion" value="opcion 3" /> Quizizz
+                </label><br />
+                <label>
+                  <input type="radio" name="opcion" value="opcion 4" /> Classroom
+                </label>
+              </div>
+              <div><center><button type="submit">Enviar</button></center></div>
+
+    </aside>
+
+    <main>
+      <section>
+        <div class="card-container">
+<!-- Estrategia 1 -->
+          <div class="card zoom-in">
+            <img src="https://img.freepik.com/vector-gratis/plantilla-diseno-mapas-mentales-coloridos_1308-160433.jpg?semt=ais_hybrid&w=740" alt="Mapas Mentales">
+            <h3>Mapas Mentales</h3>
+            <p>Organiza ideas visualmente para comprender y memorizar mejor.</p>
+          </div>
+
+          <!-- Estrategia 2 -->
+          <div class="card zoom-in">
+            <img src="https://img.freepik.com/foto-gratis/pizarra-corcho-nota-blanco_1232-171.jpg?semt=ais_hybrid&w=740" alt="Toma de Apuntes">
+            <h3>Toma de Apuntes Activa</h3>
+            <p>Resumir y reformular en tus propias palabras mejora el procesamiento.</p>
+          </div>
+
+          <!-- Estrategia 3 -->
+          <div class="card zoom-in">
+            <img src="https://img.freepik.com/foto-gratis/composicion-plana-verduras-saludables_23-2148190173.jpg?semt=ais_hybrid&w=740" alt="Técnica Pomodoro">
+            <h3>Técnica Pomodoro</h3>
+            <p>Estudia en bloques con descansos para una mejor concentración.</p>
+          </div>
+
+          <!-- Estrategia 4 -->
+          <div class="card zoom-in">
+            <img src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-self-evaluation-of-your-usual-performance-image_2291955.jpg" alt="Autoevaluación">
+            <h3>Autoevaluación</h3>
+            <p>Haz simulacros o quizzes para medir tus conocimientos.</p>
+          </div>
+
+          <!-- Estrategia 5 -->
+          <div class="card zoom-in">
+            <img src="https://img.freepik.com/vector-gratis/socios-grandes-piezas-rompecabezas_74855-5278.jpg?semt=ais_hybrid&w=740" alt="Aprendizaje Colaborativo">
+            <h3>Aprendizaje Colaborativo</h3>
+            <p>Estudiar en grupo ayuda a enriquecer ideas y resolver dudas.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Edwin Serrano – HTML & CSS</p>
+    </footer>
+  </div>
+  <script>
+    // Recuperar el nombre guardado
+    const nombre = localStorage.getItem('nombreUsuario');
+    
+    // Mostrarlo en la página
+    document.getElementById('nombreMostrado').textContent = nombre ?? "Invitado";
+  </script>
+</body>
+</html>

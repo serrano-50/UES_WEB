@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Técnica Pomodoro</title>
+    <link rel="stylesheet" href="5pag.css" />
+    <link rel="icon" href="EDU.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+
+<!--titulo-->
+<center>
+    <h1>Técnica Pomodoro</h1>
+    <p><strong><span id="miElementoEnSubpagina"></span><span id="nombreMostrado"></span></strong> 👋 Estudia concentrado en intervalos productivos</p>
+
+    <a href="menu4.html" class="boton-flotante">Inicio</a>
+    </header>
+</center>
+    <main>
+    <!-- Contenedor de contenido en línea con imagen -->
+    <section class="contenido-flex">
+        <div class="imagen-lateral">
+        <img src="https://img.freepik.com/foto-gratis/composicion-plana-verduras-saludables_23-2148190173.jpg?semt=ais_hybrid&w=740" alt="Pomodoro" class="card-img" alt="imagen-lateral" class="card-img" />        </div>
+        <div class="texto-lateral">
+        <p>La técnica Pomodoro divide el estudio en bloques de 25 minutos llamados pomodoros, seguidos por 5 minutos de descanso. Cada 4 pomodoros, se toma un descanso largo.</p>
+        <p>Esto ayuda a mejorar la concentración, reducir la fatiga mental y mantener la motivación constante sin agotamiento.</p>
+        <p>Utiliza temporizadores o apps especializadas para ponerla en práctica y llevar un registro de tu progreso.</p>
+        </div>
+    </section>
+    </main>
+<!--recupera el nombre guardado en landing page-->
+    <script>
+    const nombre = localStorage.getItem('nombreUsuario');
+    
+    // Mostrarlo en la página
+    document.getElementById('nombreMostrado').textContent = nombre ?? "Invitado";
+    </script>
+</body>
+</html>

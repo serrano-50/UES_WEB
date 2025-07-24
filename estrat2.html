@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toma de Apuntes Activa</title>
+    <link rel="stylesheet" href="5pag.css" />
+    <link rel="icon" href="EDU.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+
+<!--titulo-->
+<center>
+    <h1>Toma de Apuntes Activa</h1>
+    <p><strong><span id="miElementoEnSubpagina"></span><span id="nombreMostrado"></span></strong> 👋 Transforma la escucha en conocimiento profundo</p>
+
+    <a href="menu4.html" class="boton-flotante">Inicio</a>
+    </header>
+</center>
+    <main>
+    <!-- Contenedor de contenido en línea con imagen -->
+    <section class="contenido-flex">
+        <div class="imagen-lateral">
+        <img src="https://img.freepik.com/foto-gratis/pizarra-corcho-nota-blanco_1232-171.jpg?semt=ais_hybrid&w=740" alt="imagen-lateral" class="card-img" />        </div>
+        <div class="texto-lateral">
+        <p>La toma de apuntes activa va más allá de copiar. Consiste en reescribir conceptos con tus propias palabras, destacar ideas clave y anotar dudas o reflexiones.</p>
+        <p>Es recomendable usar esquemas, listas o tablas que ayuden a organizar y entender mejor el contenido. Evita la transcripción literal.</p>
+        <p>Esta técnica mejora la comprensión y sirve como recurso valioso para repasar antes de exámenes o exposiciones.</p>
+        </div>
+    </section>
+    </main>
+<!--recupera el nombre guardado en landing page-->
+    <script>
+    const nombre = localStorage.getItem('nombreUsuario');
+    
+    // Mostrarlo en la página
+    document.getElementById('nombreMostrado').textContent = nombre ?? "Invitado";
+    </script>
+
+</body>
+</html>

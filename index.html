@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page como página inicial</title>
+  <link rel="icon" href="edu.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="estilo4.css" />
+</head>
+
+<body>
+  <div class="contenedor">
+    <h1 class="titulo">ESTRATEGIAS DE APRENDIZAJE UNIVERSITARIO</h1>
+
+    <div class="logo">
+      <img src="logo_UES.png" alt="Logotipo Estrategias" />
+    </div>
+
+    <div>
+      <h3>Bienvenido a nuestro tanque de conocimientos para convertirte en un docente plus</h3>
+    </div>
+
+    <!-- Caja de entrada -->
+    <div class="entrada ocultar">
+      <label for="nombre">Ingrese su nombre:</label><br />
+      <input type="text" id="nombre" name="nombre" /><br />
+      <button onclick="irAlMenu()">Ingresar</button>
+    </div>
+  </div>
+
+  <script>
+    // Mostrar la caja de entrada después de 4 segundos
+    setTimeout(() => {
+      document.querySelector('.entrada').classList.remove('ocultar');
+    }, 4000);
+
+    // Función para capturar y guardar el nombre
+    function irAlMenu() {
+      const nombre = document.getElementById('nombre').value.trim();
+      
+      if (nombre !== "") {
+        // Guardar el nombre en localStorage
+        localStorage.setItem('nombreUsuario', nombre);
+
+        // Redirigir a la subpágina
+        window.location.href = "menu4.html";
+      } else {
+        alert("Por favor, ingresa tu nombre.");
+      }
+    }
+  </script>
+  
+</body>
+</html>

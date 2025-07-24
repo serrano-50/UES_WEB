@@ -1,0 +1,65 @@
+body {/* Fondo animado diagonal rojo - amarillo */
+  margin: 10;
+  padding: 5;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffff00,  #f39417);
+  background-size: 200% 400%;
+  animation: fondoMovimiento 8s infinite alternate;
+}
+.boton-flotante { /*aparece en la esquina derecha superior*/
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.boton-flotante:hover { /*cambia color*/
+  background-color: #0b7dda;
+}
+@keyframes fondoMovimiento {/*controla la velocidad*/
+  0% { background-position: left top; }
+  100% { background-position: right bottom; }
+}
+.contenido-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen lateral */
+.imagen-lateral img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Texto lateral */
+.texto-lateral {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contenido-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}
